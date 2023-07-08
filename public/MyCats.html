@@ -6,9 +6,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <title>My Cats</title>
         <style>     
-            body {
+                    body {
                 background-color: purple;
              
             }
@@ -31,6 +35,12 @@
                 text-align: center;
                
             }
+
+            .links {
+              display:flex;
+              justify-content: center;
+           }
+
             
             p {
                 margin: 0;
@@ -40,8 +50,8 @@
             }
             
             img {
-                display:block;
-                margin: 0 auto;
+                width: 100%;
+                height: 100%;
             }
             
             a {
@@ -60,21 +70,58 @@
     </head>
     <body>
         <h2>My Four Cats</h2>
-        <img src="./assets/images/dexter.jpg" alt="Dexter" height="200"/>
-        <h2>Dexter</h2><br/>
-        <img src="./assets/images/gabby.jpg" alt="Gabby" height="200"/>
-        <h2>Gabby</h2><br/>
-        <img src="./assets/images/sadie.jpg" alt="Sadie" height="200"/>
-        <h2>Sadie</h2><br/>
-        <img src="./assets/images/leo.jpg" alt="Leo" height="200"/>
-        <h2>Leo</h2>
+        <br/>
+        
 
-        <a href="./aboutme.html">About Me</a><br/>
-        <a href="./JeremyRenner.html">Jeremy Renner</a><br/>
-        <a href=".MyCats.html">My Cats</a><br/>
-        <a href="./things.html">Things I like</a><br/>
-        <a href="../index.html">Home</a><br/>
 
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                              <li data-target="#demo" data-slide-to="4"></li>
+            
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/dexter.jpg" alt="Dexter">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/gabby.jpg" alt="Gabby"/>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/sadie.jpg" alt="Sadie">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                        <div class="carousel-item">
+                    <img src="./assets/images/leo.jpg" alt="Leo">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              </div> 
+              <br/>  
+            <div class="links"> 
+            <a href="./aboutme.html" class="btn btn-info" role="button">About Me</a>
+            <a href="./JeremyRenner.html" class="btn btn-info" role="button">Jeremy Renner</a>
+            <a href="./MyCats.html" class="btn btn-info" role="button">My Cats</a>
+            <a href="./things.html" class="btn btn-info" role="button">Things I like</a>
+            <a href="../index.html" class="btn btn-info" role="button">Home</a>
+        </div> 
+        <br/>
         <footer>Copyright Luna Renee Peters 2023</footer>
-    </body>    
-</html>    
+    </body>
